@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* variables */
+ :root{
+    --white: hsl(0, 0%, 100%);
+    --orange: hsl(25, 100%, 54%);
+    --light--grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --light--dark--blue: hsl(213, 19%, 20%);
+    --dark--blue: hsl(213, 19%, 18%);
+    --very--dark--blue: hsl(216, 12%, 8%);
+ }
+
+/* resting every thing */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* typography */
+
+h1,p,button{
+    font-family: 'Overpass', sans-serif;
+}
+
+h1, button{
+    color: var(--white);
+    font-weight: 700;
+}
+
+h1{
+    margin-bottom: .5em;
+}
+
+p,li{
+    font-weight: 400;
+    color: var(--medium-grey);
+}
+
+p{
+    font-size: 15px;
+    margin-bottom: 1em;
+}
+
+li button{
+    font-family: 'Overpass', sans-serif;;
+    font-size: 12px;
+}
+
+/* layout */
+
+body{
+    background-color: var(--very--dark--blue);
+    padding: 1em;
+}
+
+#rating,#thanks{
+    max-width: 22em;
+    background-color: var(--dark--blue);
+    padding: 2em 1em;
+    margin: 10em auto;
+    border-radius: 1em;
+    text-align: left;
+}
+
+ol{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li button,.img{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: var(--light--dark--blue) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+li button, #submit{
+    border: none;
+    cursor: pointer;
+}
+
+#submit{
+    width: 100%;
+    height: 2.25em;
+    border-radius: 1em;
+    background-color: var(--orange);
+}
+
+li button:hover{
+    background-color: var(--orange);
+}
+
+#submit:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.selected{
+    background-color: var(--light--grey);
+}
+
+#thanks{
+    text-align: center;
+}
+
+#unique{
+    background-color: var(--light--dark--blue);
+    display: inline-block;
+    padding: .5em 1em;
+    border-radius: 2em;
+    color: var(--orange);
+    margin: 1em auto;
+}
